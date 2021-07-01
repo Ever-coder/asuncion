@@ -14,31 +14,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 }
-.oferta {
-  background-color: #fafafa;
-  margin: 1rem;
-  padding: 1rem;
-  border: 2px dashed #ccc;
-  /* IMPORTANTE */
-  text-align: center;
-}
-table {
-   width: 100%;
-   text-align: center;
-}
-th, td {
-   width: 20%;
-   text-align: center;
-   vertical-align: top;
-   border-collapse: collapse;
-   padding: 0.3em;
-   caption-side: bottom;
-}
 
-.img {
-  width: 300px; height: 150px;
-  border: silver 10px solid;
-}
 
 .ofertah4 {
 	font-family: 'Josefin Sans', sans-serif;
@@ -106,7 +82,6 @@ textarea:focus {
 .btn {
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
-	font-weight: 600;
 	width: 120px;
 	height: 40px;
 	-moz-border-radius: 0;
@@ -302,7 +277,7 @@ textarea:focus {
 #slider .caption {
 	position: absolute;
 	text-align: left;
-	width: 600px;
+	width: 800px;
 	top: 50%;
 }
 
@@ -350,7 +325,8 @@ textarea:focus {
 @media screen and (min-width: 320px) and (max-width: 520px) {
 	#slider .caption {
 		position: absolute;
-		width: 400px;
+		width: 100%;
+		max-width: 150px;
 		top: 55%;
 	}
 
@@ -375,7 +351,7 @@ textarea:focus {
 	}
 }
 
-/*Media*/
+/*Media
 @media screen and (min-width: 521px) and (max-width: 980px) {
 	#slider .caption {
 		position: absolute;
@@ -401,7 +377,7 @@ textarea:focus {
 		margin-top: 15px;
 
 	}
-}
+}*/
 
 /*Control Nav*/
 #slider .flex-control-nav {
@@ -473,7 +449,7 @@ textarea:focus {
 
 #about .about-right {
 	position: relative;
-	padding: 0 80px 150px 80px;
+	padding: 0 80px 10px 80px;
 }
 
 #about .about-right-heading h1 {
@@ -893,6 +869,7 @@ textarea:focus {
 
 /*Service Footer*/
 #service .service-footer {
+	#2D084B
 	background: #222222;
 	padding: 30px 0;
 }
@@ -1267,7 +1244,7 @@ form{
 /*Footer*/
 #footer {
 	margin-top: 100px;
-	background-color: #181818;
+	background-color: #1C0331;
 	padding: 50px 0;
 }
 
@@ -1339,7 +1316,9 @@ form{
 
 /*Bottom Footer*/
 #bottom-footer {
-	background-color: #282828;
+	border-top-style: solid;
+	border-top-color: white;
+	background-color: #18022A;
 	padding: 20px 0;
 	color: #8e8e8e;
 }
