@@ -9,7 +9,6 @@
 	text-align: center;
 }
 .sitiotext{
-
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 700;
 	font-size: 45px;
@@ -41,8 +40,8 @@
 .texttitu{
 
 	margin-top: 10px;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 30px;
+	font-family: optima;
+	font-size: 35px;
 	text-shadow: 2px 2px 2px ;
 
 }

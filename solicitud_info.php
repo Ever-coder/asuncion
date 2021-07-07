@@ -15,11 +15,15 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Dropdown -->
+  <link rel="stylesheet" href="css/drop.css">
 </head>
 <style type="text/css">
   .box{
     padding: 10px;
     margin: 50px auto;
+
     box-shadow: 0px 0px 10px 5px  #170125;
     background-color:#B29CD3;
     border-radius: 20px;
@@ -34,8 +38,7 @@
   }
   .nota{
     font: oblique bold 120% cursive;
-    color: #9E0404;
-    padding-left: 15px;
+    color: #340B5F;
   }
   .h1{
     font-weight: bold;
@@ -58,13 +61,6 @@
         <div class="row">
           <div class="col-md-6">
             <div class="top-left">
-
-              <ul>
-                <li><a href="https://www.facebook.com/colegiolaasuncionsv"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/laasuncionsv?lang=es"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.instagram.com/laasuncionsv/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              </ul>
-
             </div>
           </div>
 
@@ -86,38 +82,47 @@
         <div class="container">
 
           <div class="navbar-header">
-            <img src="images/slider/asun1.png">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ftheme">
+            <img src="images/slider/logo.png">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ftheme">
               <span class="sr-only">Toggle</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
           </div>
-
           <div class="navbar-collapse collapse" id="ftheme">
 
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="index.html#home">INICIO</a></li>
-              <li><a href="index.html#about">QUIENES SOMOS</a></li>
-              <li><a href="index.html#service">SITIOS DE INTERÉS</a></li>
-              <li><a href="index.html#get-touch">NUEVO INGRESO</a></li>
-
+              <li><a href="index.html">INICIO</a></li>
+              <li><a href="quienes.html">QUIÉNES SOMOS</a></li>
+              <li class="dropdown"><a>SITIOS DE INTERÉS <i class="fa fa-caret-down"></i></a>
+                  <div class="dropdown-content">
+                      <a href="sitios.html">Plataforma y Correo</a>
+                      <a href="noticias.html">Noticias</a>
+                      <a href="galeria.html">Galería</a>
+                      <a href="https://sites.google.com/view/biblioteca-monseor-romero/inicio" target="_blank">BIBLIOTECA</a>
+                  </div>
+              </li>
+              <li class="dropdown"><a>NUEVO INGRESO <i class="fa fa-caret-down"></i></a>
+                  <div class="dropdown-content">
+                      <a href="oferta.html">Oferta Académica</a>
+                      <a href="solicitud_info.php" target="_blank">Proceso de Admisión</a>
+                  </div>
+              </li>
+              <li><a class="a" href="contactenos.html">Contáctenos</a></li>
+              <li></li>
+              <li><a href="https://www.facebook.com/colegiolaasuncionsv" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="https://twitter.com/laasuncionsv?lang=es" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/laasuncionsv/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
 
           </div>
-
-          <div class="search-form">
-           
-          </div>
-
         </div>
       </nav>
     </div>
-
   </header>
   <div>
-      <div class="container box">
+      <div class="box">
                 <!--<center><img class="img" src="asunclog.jpg"></center>-->
                  <center>
 

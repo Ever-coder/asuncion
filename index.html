@@ -21,18 +21,26 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-
-  <link rel="stylesheet" href="css/myv.css">
-
   <link rel="stylesheet" href="css/sitios.css">
 
   <link rel="stylesheet" href="css/slide.css">
+
+  <!-- Modal -->
+  <link rel="stylesheet" href="css/modal.css">
+
+  <!-- Dropdown -->
+  <link rel="stylesheet" href="css/drop.css">
+
+  <!--Noticias Breves -->
+  <link rel="stylesheet" href="css/noticias-breves.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
   <link rel="stylesheet" href="css/gallery-grid.css">
 
   <!-- animacion formulario-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 </head>
 
@@ -68,37 +76,62 @@
 
           <div class="navbar-header">
             <img src="images/slider/logo.png">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ftheme">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ftheme">
               <span class="sr-only">Toggle</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
           </div>
-
           <div class="navbar-collapse collapse" id="ftheme">
 
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#home">INICIO</a></li>
-              <li><a href="sitios.html">SITIOS DE INTERÉS</a></li>
-              <li><a href="galeria.html">GALERÍA</a></li>
-              <li><a href="#get-touch">NUEVO INGRESO</a></li>
-              <li><a href="https://www.facebook.com/colegiolaasuncionsv"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="https://twitter.com/laasuncionsv?lang=es"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="https://www.instagram.com/laasuncionsv/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="quienes.html">QUIÉNES SOMOS</a></li>
+              <li class="dropdown"><a>SITIOS DE INTERÉS <i class="fa fa-caret-down"></i></a>
+                  <div class="dropdown-content">
+                      <a href="sitios.html">Plataforma y Correo</a>
+                      <a href="noticias.html">Noticias</a>
+                      <a href="galeria.html">Galería</a>
+                      <a href="https://sites.google.com/view/biblioteca-monseor-romero/inicio" target="_blank">BIBLIOTECA</a>
+                  </div>
+              </li>
+              <li class="dropdown"><a>NUEVO INGRESO <i class="fa fa-caret-down"></i></a>
+                  <div class="dropdown-content">
+                      <a href="oferta.html">Oferta Académica</a>
+                      <a href="solicitud_info.php" target="_blank">Proceso de Admisión</a>
+                  </div>
+              </li>
+              <li><a class="a" href="contactenos.html">Contáctenos</a></li>
+              <li></li>
+              <li><a href="https://www.facebook.com/colegiolaasuncionsv" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="https://twitter.com/laasuncionsv?lang=es" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/laasuncionsv/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
 
           </div>
-
         </div>
       </nav>
     </div>
-
   </header>
+
+<!-- Modal
+<div>
+   <input type="checkbox" id="cerrar">
+   <label for="cerrar" id="btn-cerrar">X</label>
+
+      <div class="window-notice" id="window-notice">
+          <div class="content">
+              <div class="content-text">
+               <center><input type="checkbox" id="cerrar">
+              <label for="cerrar" id="btn-cerrar">X</label></center>
+              <a href="solicitud_info.php"><img src="images/modal/openhouse.gif"></a></div>
+          </div>
+      </div>
+</div>
 
   <!--slider-->
   <div id="slider" class="flexslider">
-
     <ul class="slides">
       <li>
         <img src="images/slider/banneruno.jpg">
@@ -110,242 +143,7 @@
         <img src="images/slider/bannertres.jpg">
       </li>
     </ul>
-
   </div>
-
-  <!--about-->
-  <div id="sitio"><br>
-    <div id="head">
-            <hr class="hr">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                  <div class="service-heading">
-                    <h2 class="sitiotext">¿QUIENES SOMOS?</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="hr">
-          </div>
-    <h4>Somos una institución católica miembro de la red de Colegios de las Religiosas de La Asunción,<br> con presencia en 33 países de los cuatro continentes.</h4>
-  </div><br>
-
-  <div class="container">
-            <div class="row">
-            <div class="form-group">
-              <div class=" col-md-6 col-sm-6">
-                <center><h2 class="texttitu">MISIÓN</h2></center>
-                        <div class="boxm">
-                          <hr class="hr">
-                          <p class="parra">Somos una institución educativa católica que formamos integralmente niños, niñas y jóvenes con sólida conciencia humana, espiritual e intelectual a través del desarrollo de competencias para la vida, apoyándonos en los procesos pedagógicos innovadores y tecnológicos, para hacer que nuestros estudiantes y graduados se comprometan e incidan en la sociedad.</p>
-                          <hr class="hr">
-                        </div>
-              </div>
-              
-              <div class=" col-md-6 col-sm-6">
-                <center><h2 class="texttitu">VISIÓN</h2></center>
-                        <div class="boxm">
-                          <hr class="hr">
-                            <p class="parra">Ser una institución educativa de calidad, reconocida por su alto desempeño académico, innovación pedagógica y compromiso social sustentado en valores del Evangelio.</p><br><br><br><br>
-                          <hr class="hr">
-                        </div>
-              </div>
-              </div>
-              
-            </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="form-group">
-        <div class="col-md-6">
-
-            <center><h2 class="texttitu">VALORES</h2></center>
-          
-            <div class="w3-content w3-display-container">
-
-                  <div class="w3-display-container mySlides">
-                    <img class="imgslide" src="images/valores/amor.jpeg" style="width:100%">
-                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16">
-                    </div>
-                  </div>
-
-                  <div class="w3-display-container mySlides">
-                    <img class="imgslide" src="images/valores/compromiso.jpeg" style="width:100%">
-                    <div class="w3-display-bottomright w3-large w3-container w3-padding-16">
-                    </div>
-                  </div>
-
-                  <div class="w3-display-container mySlides">
-                    <img class="imgslide" src="images/valores/fidelidad.jpeg" style="width:100%">
-                    <div class="w3-display-topleft w3-large w3-container w3-padding-16">
-                    </div>
-                  </div>
-
-                  <div class="w3-display-container mySlides">
-                    <img class="imgslide" src="images/valores/justicia.jpeg" style="width:100%">
-                    <div class="w3-display-topright w3-large w3-container w3-padding-16">
-                    </div>
-                  </div>
-
-                  <div class="w3-display-container mySlides">
-                    <img class="imgslide" src="images/valores/rectitud.jpeg" style="width:100%">
-                    <div class="w3-display-middle w3-large w3-container w3-padding-16">
-                    </div>
-                  </div>
-
-                  <div class="w3-display-container mySlides">
-                    <img class="imgslide" src="images/valores/respeto.jpeg" style="width:100%">
-                    <div class="w3-display-middle w3-large w3-container w3-padding-16">
-                    </div>
-                  </div>
-
-                  <div class="w3-display-container mySlides">
-                    <img class="imgslide" src="images/valores/sencillez.jpeg" style="width:100%">
-                    <div class="w3-display-middle w3-large w3-container w3-padding-16">
-                    </div>
-                  </div>
-
-                  <div class="w3-display-container mySlides">
-                    <img class="imgslide" src="images/valores/solidaridad.jpeg" style="width:100%">
-                    <div class="w3-display-middle w3-large w3-container w3-padding-16">
-                    </div>
-                  </div>
-
-                  <div class="w3-display-container mySlides">
-                    <img class="imgslide" src="images/valores/rectitud.jpeg" style="width:100%">
-                    <div class="w3-display-middle w3-large w3-container w3-padding-16">
-                    </div>
-                  </div>
-                  <br>
-                  <div class="w3-display-container">
-                  <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-                  <center></center>
-                  <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-                  </div>
-                  
-
-          </div>
-
-        </div>
-
-        <div class="col-md-6">
-
-            <center><h2 class="texttitu">VALOR DEL MES</h2></center>
-          
-            <div class="w3-content w3-display-container">
-
-                  <div class="w3-display-container mySlides2">
-                    <img class="imgslide" src="images/valormes/valormes.png" style="width:100%">
-                    <div class="w3-display-bottomleft w3-large w3-container w3-padding-16">
-                    </div>
-                  </div>
-
-                  <div class="w3-display-container mySlides2">
-                    <img class="imgslide" src="images/valormes/valormesuno.png" style="width:100%">
-                    <div class="w3-display-bottomright w3-large w3-container w3-padding-16">
-                    </div>
-                  </div>
-
-                  <div class="w3-display-container mySlides2">
-                    <img class="imgslide" src="images/valormes/valormesdos.png" style="width:100%">
-                    <div class="w3-display-topleft w3-large w3-container w3-padding-16">
-                    </div>
-                  </div>
-
-                  <div class="w3-display-container mySlides2">
-                    <img class="imgslide" src="images/valormes/valormestres.png" style="width:100%">
-                    <div class="w3-display-topright w3-large w3-container w3-padding-16">
-                    </div>
-                  </div>
-                  <br>
-                  <div class="w3-display-container">
-                  <button class="w3-button w3-display-left w3-black" onclick="plusDivss(-1)">&#10094;</button>
-                  <center></center>
-                  <button class="w3-button w3-display-right w3-black" onclick="plusDivss(1)">&#10095;</button>
-                  </div>
-                  
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Script para el slides de valores -->
-
-  <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
-
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
-
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";  
-        }
-        x[slideIndex-1].style.display = "block";  
-      }
-      var slideIndexs = 1;
-      showDivss(slideIndexs);
-
-      function plusDivss(n) {
-        showDivss(slideIndexs += n);
-      }
-
-      function showDivss(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides2");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndexs = x.length}
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";  
-        }
-        x[slideIndexs-1].style.display = "block";  
-      }
-  </script>
-
-
-  <script>
-      var myIndex = 0;
-      carousel();
-
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        myIndex++;
-        if (myIndex > x.length) {myIndex = 1}    
-        x[myIndex-1].style.display = "block";  
-        setTimeout(carousel, 4000); // Change image every 2 seconds
-      }
-      var myIndexs = 0;
-      carousel2();
-
-      function carousel2() {
-        var i;
-        var x = document.getElementsByClassName("mySlides2");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";  
-        }
-        myIndexs++;
-        if (myIndexs > x.length) {myIndexs = 1}    
-        x[myIndexs-1].style.display = "block";  
-        setTimeout(carousel2, 4000); // Change image every 2 seconds
-        }
-    </script>
-
 
   <!--about bg-->
   <div id="about-bg">
@@ -397,143 +195,65 @@
       </div>
     </div>
 
-    <div id="cover"></div>
-
+    <div class="cover"></div>
   </div>
 
- <!--  NUEVO INGRESO-->
-  <div id="get-touch">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
-          <div class="get-touch-heading">
-            <h2>Proceso de admisión 2022</h2>
-            <h3>Oferta académica nuevo ingreso año 2022</h3>
-            <p></p>
-          </div>
-        </div>
-      </div>
+  <!-- Noticias -->
+<div id="sitio">
+    <div id="head">
+            <hr class="hr">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                  <div class="service-heading">
+                    <h2 class="texttitu">ULTIMAS NOTICIAS</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="hr">
+    </div>
+    <h3 class="animate__animated animate__pulse animate__slow animate__infinite  infinite">Te compartimos nuestros titulares</h3>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/noticias/open.jpg">
+      <h3><b>OPEN HOUSE</b></h3>
+      <p><b>Te esperamos el día sábado 17 de junio en nuestro primer OPEN HOUSE a las 10:00 a.m.</b></p>
     </div>
   </div>
-  <div class="container">
-    <center>
-      <form class="oferta">
-        <div class="row">
-          <style type="text/css">
-            .oferta {
-              margin: 1rem;
-              padding: 1rem;
-              border: 3px dashed #1E0741;
-              border-top-left-radius: 40px;
-              border-bottom-right-radius: 40px;
-              /* IMPORTANTE */
-              text-align: center;
-            }
-            form {
-              background: url('images/ofertafondo/tableback.jpg') no-repeat;
-              background-position: center center;
-              background-size: cover;
-            }
 
-            .colleft1{
-              border-radius: 20px;
-              border: 1px black solid;
-              width: auto;
-              height: auto;
-
-            }
-          </style>
-          <div class="col-md-4"><br><br><br>
-            <center><img src="images/oferta/1ciclo.jpg" class="colleft1" alt=""></center>
-          </div>
-
-          <div class="col-md-8">
-              <h4 class="ofertah4">Primer Ciclo</h4>
-              <b><p class="textright" align="justify"><font size="3">
-                El Primer Ciclo es la primera etapa de la Enseñanza Básica. Contempla los grados de 1º a 3º. En este nivel los alumnos inician con el desarrollo de destrezas básicas para la expresión oral, la lectura, la escritura y el cálculo aritmético, así como el desarrollo de la independencia y autonomía.<br>
-
-                En esta etapa todas las actividades son adecuadas para que puedan fortalecer sus hábitos de trabajo; tales como: organización, manejo de tiempo, atención sostenida, responsabilidad, puntualidad y trabajo cooperativo. Habilidades fundamentales para completar la Primaria exitosamente.<br>
-
-                Además, los niños/as reciben clases de formación en la fe, inglés, deportes, música, artes manuales, en jornada de 6:50 a.m. a 12:30 p.m.
-              </font></p></b>    
-          </div>
-        </div>
-      </form>
-    </center>
+  <div class="column">
+    <div class="card">
+      <img src="images/noticias/admin.png">
+      <h3><b>Admisiones 2022</b></h3>
+      <p><b>¡Sé parte de nuestra familia! Empezamos nuestro proceso para alumnos de nuevo ingreso.</b></p>
+    </div>
   </div>
-
-  <div class="container">
-    <center>
-      <form class="oferta">
-        <div class="row">
-          <div class="col-md-4">
-            <center><img class="colleft1" src="images/oferta/2ciclo.jpg" alt=""></center>
-          </div>
-          <div class="col-md-8">
-              <h4 class="ofertah4">Segundo Ciclo</h4>
-              <b><p class="textright" align="justify"><font size="3">
-                El 2º ciclo comprende de 4o a 6o grado. Es una etapa en la cual las alumnas desarrollan las habilidades de independencia, sociabilidad, resolución de problemas, trabajo en equipo, entre otras.<br>
-
-                Además, los niños/as reciben clases de formación en la fe, inglés, deportes, música, artes manuales, en jornada de 6:50 a.m. a 12:30 p.m.
-              </font></p></b>    
-          </div>
-        </div>
-      </form>
-    </center>
-  </div>
-
-  <div class="container">
-    <center>
-      <form class="oferta">
-        <div class="row">
-          <div class="col-md-4"><br><br><br><br>
-            <center><img class="colleft1" src="images/oferta/3ciclo.jpg" alt=""></center>
-          </div>
-          <div class="col-md-8">
-              <h4 class="ofertah4">Tercer Ciclo</h4>
-              <b><p class="textright" align="justify"><font size="3">
-                Comprende los últimos tres grados de la educación básica (Séptimo, Octavo y Noveno) en jornada de 6:50 a.m. a 12:30 p.m. Es un nivel en el cual los/ las estudiantes viven un momento de transición en la vida, que marca el paso de la niñez a la edad adulta. En esta etapa hay cambios fuertes tanto biológicos, fisiológicos, sociológicos como emocionales. Es por eso que dentro de nuestras actividades velamos por un acompañamiento espiritual y emocional constante con los/las estudiantes. Se busca brindarles las herramientas necesarias para los cambios que se manifiesten en esta etapa.<br>
-
-                Se trabaja desde la fundamentación constructivista con metodologías que fomenten la creatividad la creatividad, la investigación mediante el uso de laboratorios, la investigación documental o testimonial, la construcción propia y grupal del pensamiento, la vinculación del conocimiento con la realidad, se promueven no sólo las habilidades cognitivas sino también las emocionales y grupales.<br>
-
-                Además de las áreas explícitamente académicas del currículo básico, los/las estudiantes reciben educación física, formación en la fe y computación.
-              </font></p></b>   
-          </div>
-        </div>
-      </form>
-    </center>
-  </div>
-
-  <div class="container">
-    <center>
-      <form class="oferta">
-        <div class="row">
-          <div class="col-md-4"><br><br>
-            <center><img class="colleft1" src="images/oferta/Bachillerato.jpg" alt=""></center>
-          </div>
-          <div class="col-md-8">
-              <h4 class="ofertah4">Bachillerato</h4>
-              <b><p class="textright" align="justify"><font size="3">
-                Bachillerato es un nivel en el cual los/las estudiantes ya han establecido o están en el proceso de establecer un proyecto de vida más concreto que los/las lleve a su elección profesional. Es por esto que se les brinda un acompañamiento especial, mediante actividades que tienen como objetivo el descubrimiento de su vocación, como son la Jornada Vocacional Asunción, la Feria de Universidades. Se persigue orientarlos y acompañarlos en ésta decisión que las llevará a cumplir sus metas.<br>
-
-                Además de las áreas explícitamente académicas del currículo básico, los/las estudiantes reciben educación física, formación en la fe y computación, en jornada de 6:50 a.m. a 2:30 p.m.
-              </font></p></b>   
-          </div>
-        </div>
-      </form>
-    </center>
-  </div>
-
-  <hr>
   
-    <center >
-    <div ><h3><img class="animate__animated animate__tada animate__infinite  infinite" src="images/flechasanuncios/form.png">  Para mayor información, dejanos tus datos haciendo click <a href="solicitud_info.php">"AQUI"</a> <img class="animate__animated animate__tada animate__infinite  infinite" src="images/flechasanuncios/form.png"></h3></div>
-    <hr>
-    <h3><img class="animate__animated animate__tada animate__infinite  infinite" src="images/flechasanuncios/encuesta.png">  Ayudanos con la siguiente encuesta para la <a href="https://forms.office.com/r/Qrj71cw3Y7" target="_blank">"Reapertura de Parvularia"</a> <img class="animate__animated animate__tada animate__infinite  infinite" src="images/flechasanuncios/encuesta.png"></h3>
-    </center>
+  <div class="column">
+    <div class="card">
+      <img src="images/noticias/kinder.png">
+      <h3><b>Kinder Asunción</b></h3>
+      <p><b>¡Queremos reaperturar el colegio para los más peques!
+                                Llena la siguiente encuesta:</b><br>  
+                                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=EqNxLz1Z7E2nWvXqkTCNojq3rBZ7_9pGhFegs-gtpQ5UM0RJUzdFSFg3MEpKWDAxNTNUR1hBSVJYQS4u" target="_blank"><b>Kinder Asunción</b></a>
+      </p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/noticias/mantenimiento.jpg">
+      <h3><b>¡Información Importante!</b></h3>
+      <p><b>1 de julio y el jueves 15 de julio, la plataforma de Canvas se encontrara en mantenimiento</b></p>
+    </div>
+  </div>
+</div>
 
-
-  <!--contact-->
+ <!--contact-->
   <div id="contact">
     <div class="container">
       <div class="row">
@@ -549,7 +269,38 @@
 
   </div>
 
+  <!-- WhatsApp Chat -->
+  <a href="https://api.whatsapp.com/send?phone=50376025460&text=Hola!&nbsp;Me&nbsp;podrían&nbsp;brindar&nbsp;información?" class="appWhatsapp" target="_blank">
+    <img src="images/Whatsapp.png" alt="Whatsapp">
+  </a>
 
+  <!-- Messenger plugin del chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your plugin del chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "640260806045532");
+      chatbox.setAttribute("attribution", "page_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
   <!--footer-->
   <div id="footer">
